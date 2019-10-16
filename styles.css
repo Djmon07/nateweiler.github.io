@@ -1,13 +1,23 @@
+/* Making page border box */
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
+/* Page height and text setting */
 html,
-.body {
+body {
   height: 100%;
   text-align: center;
 }
 
+/* Responsive images */
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header sticky to be scrollable with page */
 header {
   position: sticky;
   top: 0;
@@ -15,46 +25,53 @@ header {
   background-color: lightblue;
 }
 
+/* Header anchor styling */
 header a {
   font-size: 20px;
-  color: white;
+  color: black;
   width: auto;
   padding: 25px 10px;
   text-decoration: none;
 }
 
+/* Header anchor hover color */
 header a:hover {
   background-color: yellow;
 }
 
+/* Same styling for home, about, contact */
 #home,
 #about,
-#my-business,
 #contact {
   margin: 0;
+  padding: 100px 0 100px 0;
   width: 100%;
 }
 
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
-
+/* Home background image */
 #home {
-  padding-top: 50px;
-  background: url("Images/Code-Text.png");
+  background: url("Images/code-text.png");
 }
 
+/* Name at top of home styling */
 .name {
   height: 100px;
-  color: yellowgreen;
+  color: white;
+  text-shadow: 8px 10px 9px red;
   font-size: 40px;
   font-family: 'Shrikhand', cursive;
+}
+
+/* Animation on all h1 */
+.name,
+.about,
+.contact {
   animation: in 5s ease-out forwards infinite;
   animation-delay: 10s;
   -webkit-animation: in 5s ease-out forwards infinite;
 }
 
+/* Animation keyframes for all h1 */
 @keyframes in {
   0% {
     letter-spacing: -17px;
@@ -106,75 +123,48 @@ header a:hover {
   }
 }
 
+/* My motto in home styling */
 .motto {
   color: white;
-  text-shadow: 8px 10px 9px yellow;
-  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 8px 10px 9px red;
+  font-family: 'Notable',
+    sans-serif;
   font-size: 35px;
   padding: 100px;
 }
 
+/* About styling */
 #about {
   color: #FFCC91;
   background-color: white;
-  text-shadow: 2px 3px 2px grey;
-  font-family: Impact,
-    'Arial Narrow Bold',
+  text-shadow: 6px 10px 8px black;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+}
+
+/* Contact styling */
+#contact {
+  background-color: aqua;
+  color: white;
+  text-shadow: 8px 10px 9px blue;
+  font-family: 'Notable',
     sans-serif;
   font-size: 40px;
 }
 
+/* My Business styling */
 #my-business {
-  font-family: 'Permanent Marker',
-    cursive;
+  font-family: 'Times New Roman', Times, serif;
   background: #333;
-  font-size: 26px;
-  color: rgb(182, 189, 194);
-}
-
-#contact {
-  background-color: aqua;
-  padding-top: 100px;
-  font-family: 'Notable',
-    sans-serif;
-  font-size: 30px;
-}
-
-input[type=text],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: blue;
+  font-size: 36px;
   color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
-input[type=submit]:hover {
-  background-color: green;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: aqua;
-  padding: 20px;
-}
-
+/* Footer styling */
 footer {
   text-align: center;
   position: sticky;
+  margin: 0;
   bottom: 0px;
   color: rgb(17, 22, 41);
   background-color: lightblue;
