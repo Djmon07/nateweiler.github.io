@@ -134,6 +134,11 @@ header a:hover {
   padding: 100px;
 }
 
+/* About background image */
+#home {
+  background: url("Images/number-code.gif");
+}
+
 /* About styling */
 #about {
   color: #FFCC91;
