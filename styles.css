@@ -5,8 +5,7 @@
 }
 
 /* Page height and text setting */
-html,
-body {
+html, body {
   height: 100%;
   text-align: center;
 }
@@ -36,7 +35,7 @@ header a {
 }
 
 /* Header anchor hover color */
-header a:hover {
+header a: hover {
   background-color: yellow;
 }
 
@@ -64,9 +63,7 @@ header a:hover {
 }
 
 /* Animation on all h1 */
-.name,
-.about,
-.contact {
+.name, .about, .contact {
   animation: in 5s ease-out forwards infinite;
   animation-delay: 10s;
   -webkit-animation: in 5s ease-out forwards infinite;
@@ -128,8 +125,7 @@ header a:hover {
 .motto {
   color: white;
   text-shadow: 8px 10px 9px red;
-  font-family: 'Notable',
-    sans-serif;
+  font-family: 'Notable', sans-serif;
   font-size: 35px;
   padding: 100px;
 }
@@ -141,7 +137,7 @@ header a:hover {
 
 /* About styling */
 #about {
-  color: #FFCC91;
+  color: #ffcc91;
   background-color: white;
   text-shadow: 6px 10px 8px black;
   font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -153,8 +149,7 @@ header a:hover {
   background-color: aqua;
   color: white;
   text-shadow: 8px 10px 9px blue;
-  font-family: 'Notable',
-    sans-serif;
+  font-family: 'Notable', sans-serif;
   font-size: 40px;
 }
 
